@@ -336,12 +336,6 @@ function makeWebRTCConnection() {
   // add ICE candidate
   RTC.addEventListener('addstream', data => {
     displayMedia(data.stream);
-    /* const videoTag = document.createElement('video');
-    videoTag.srcObject = data.stream;
-    videoTag.addEventListener('loadedmetadata', () => {
-      videoTag.play();
-    });
-    videoGrid.appendChild(videoTag); */
   });
 }
 
